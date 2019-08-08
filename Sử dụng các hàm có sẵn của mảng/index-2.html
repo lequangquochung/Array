@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var input = window.prompt('Nhập số',''); 
+	var string = input.toString(); 
+    var result = [string[0]];
+
+for (var i = 1; i < string.length; i++) {
+	if (string[i - 1] % 2 === 0 && string[i] % 2 === 0) {
+    	result.push('-', string[i]);
+    } else {
+		result.push(string[i]);
+	}
+}document.write(result.join(''));	
+
+
+
+</script>
+
+</body>
+</html>

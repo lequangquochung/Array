@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css" media="screen">
+body{
+	text-align: center;
+}
+	
+</style>
+<body>
+<h3>Nhập vào 10 phần tử rồi kiểm tra</h3>
+<input type="text" id="input" />
+<input type ="button" onclick="addTo()" value="Add" />
+<input type="button" onclick="Check()" value="Check"/>
+<p id="kq"></p>
+<script> 
+var array = [];	
+
+
+
+function addTo() {
+	array.push(parseInt(document.getElementById("input").value));
+   	console.log(array);
+}
+function Check() {	
+	for (var i = 0; i <= array.length; i++) {
+		array.sort(function(a, b){return a - b});
+	} 
+	array.reverse();
+	document.getElementById('kq').innerHTML = array;		
+	
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+var input = window.prompt('Nhập kí tự',''); 
+var str = parseInt(input); 
+console.log(typeof str);
+var result = [str[input]];
+const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+
+  for(var x=0; x<str.length; x++)
+  {
+    if(UPPER.includes(str[x]))
+    {
+      result.push(str[x].toLowerCase());
+    }
+    else if(LOWER.includes(str[x]))
+    {
+      result.push(str[x].toUpperCase());
+    }
+    else 
+    {
+      result.push(str[x]);
+    }
+  }
+document.write(result.join(''));
+</script>
+
+</body>
+</html>

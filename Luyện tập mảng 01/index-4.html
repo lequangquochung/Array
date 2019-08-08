@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css" media="screen">
+body{
+	text-align: center;
+}
+	
+</style>
+<body>
+<h3>Nhập vào 10 phần tử rồi kiểm tra</h3>
+<input type="text" id="input" />
+<input type ="button" onclick="addTo()" value="Add" />
+<input type="button" onclick="Check()" value="Check"/>
+<input type="button" onclick="Reverse()" value="Reverse"/>
+<p id="kq"></p>
+
+<script> 
+var array = [];	
+var max = [array[0]];
+
+
+function addTo() {
+   array.push(parseInt(document.getElementById("input").value));
+   console.log(array);
+}
+
+function Reverse() {
+array.reverse();
+document.getElementById('kq').innerHTML = array;
+}
+
+
+
+</script>
+
+</body>
+</html>

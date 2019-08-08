@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="kq"></p>
+<script type="text/javascript">
+	var arrayA = [1,3,5,7,9];
+	var arrayB = [2,4,6,8,10];
+	var arrayC = arrayA.concat(arrayB);
+	arrayC.sort(function(a, b){return a - b});
+	document.getElementById('kq').innerHTML = arrayC;
+</script>
+
+</body>
+</html>

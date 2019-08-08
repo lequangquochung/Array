@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<input type="text" id="input" >
+<button onclick="search()">Search</button>
+<p id="kq"></p>
+
+
+<script type="text/javascript">
+	var text1 = ["calculator","fish","car","lake","school"];
+	var text2 = ["máy tính","cá","xe hơi","hồ","trường học"];
+	
+function search() {	
+	var	name = document.getElementById('input').value;
+	var kt = false;
+	for(var i = 0 ; i<text1.length;i++){
+		if (text1[i]===name) {
+		document.getElementById('kq').innerHTML = text2[i];
+		kt = true;
+		}
+	}
+	if(kt==false){
+		document.getElementById('kq').innerHTML='Không tìm thấy'
+	}
+}
+
+
+	
+
+
+
+
+</script>
+
+</body>
+</html>
